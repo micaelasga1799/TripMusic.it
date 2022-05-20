@@ -1,0 +1,196 @@
+html, body {
+	max-width: 100%;
+	height: 100%; /*il 100% fa sì che l'immagine si estanda su tutta l'aria visibile della finestra*/
+	margin: 0px;
+	padding: 0px;
+	overflow: visible; /*overflow specifica cosa dovrebbe succedere se il contenuto supera il box contenitore*/
+	font-family: 'Josefin Sans', sans-serif !important;
+}
+
+header {
+	text-align: left;
+	background: #e0da48 url(../images/firstpagehome.jpg) no-repeat center;
+	background-size: 100% 100%; 
+	height: 100%;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+	font-family: 'Josefin Sans', sans-serif ;
+}
+
+
+#homeicon {
+	font-size: 1.5vw;
+	padding: 2px 3px;
+}
+
+nav ul { list-style-type: none;}
+
+nav ul li {
+	display: inline-block;
+	padding-top: 0px;
+	padding-bottom: 0px ; /*aggiusta in index*/
+	padding-left: 3%;
+	font-size: 2vw;
+	margin: auto;
+
+} 	
+
+#meno {    margin-block-end: 0px !important;
+    margin-inline-start: 0px !important;
+    margin-inline-end: 0px !important;
+    padding-inline-start: 0px !important;
+}
+
+#navartisti {padding-right: 3em !important;}
+
+
+.navlink {
+	color: black;
+	text-decoration: none; 
+}
+
+.navlink:hover {
+ 	color: black;
+ 	text-decoration: underline;
+}
+
+#backgroundnav {
+	margin: 0px auto;
+	text-align: right !important;
+	background-color: rgb(255, 255, 255, 0.6); /*invece di usare comando opacity, ho usato Opacità con rgba così che l'op non fosse ereditata da elementi figli*/
+	height: 16vh ;
+	width: 100%;
+	position: static;  /*grazie a static il nav non segue più lo scroll, per le altre pagine funziona, perchè qui no? */
+	padding: 1%;
+}
+
+#immaginelogo { 
+	padding: 0%; 
+	float: left;
+	max-width: 20% !important;
+	height: 100%;
+}
+
+
+
+
+#payoff {
+	font-family: 'Oleo Script Swash Caps', cursive;
+	font-size: 3.7vw ;
+	padding-left: 0.4em;
+	padding-top: 28vh;
+}
+
+
+#baseline {
+	font-size: 2vw;
+	padding-left: 0.9em;
+}
+
+
+#frecciaheader {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	font-size: 1.5em;
+}
+
+#frecciaheader a {color: black;}
+
+
+#contenuti {background-color: #e0da48;}
+
+#logotipo {
+ max-width: 10vw;
+ max-height: 15vh;
+ text-align: center;
+}
+
+#abstract {font-size: 2vw;}
+
+
+#btn {
+	display: inline-block;
+	padding-left: 4vw;
+	padding-bottom: 10vh;
+	font-size: 10vh; /*non so perchè ma è con questa istruzione che si ridimensiona lo spazio tra le caselle, le istruzioni width  e font-size hanno funzionato solo se inserite ai singoli elementi (no classe)*/
+}
+
+#bottoneguida {
+	width: 26vw;
+	font-size: 2vw;
+}
+
+#bottonericerca {
+	width: 26vw;
+	font-size: 2vw;
+}
+
+#bottonefaq {
+	width: 26vw;
+	font-size: 2vw;
+}
+
+
+.linkbtn {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.morepaddinga {
+	padding-top: 9%;
+	padding-right: 2%;
+}
+
+#pagina2 {
+	padding-top: 9%;
+	padding-bottom: 4%;}
+
+footer {
+	color: white;
+	background-color: black;
+}
+
+.linkfooter {
+	color: white;
+	text-decoration: none;
+}
+
+.linkfooter:hover {color: white;}
+
+
+#footericon {
+	padding-left: 1vw;
+}
+
+#iconesocial {
+	padding-left: 1vw;
+	color: white;
+	width: 1%; /*perchè width mi controlla la distanza tra icone, invece che la grandezza?*/
+}
+
+#iconesocial2 {
+	color: white;
+}
+
+#testofooter {
+	padding-top: 1em;}
+
+.lesspadding {margin-bottom: 0px !important; }
+
+.contenuti {
+    padding: 0px 2vw !important; 
+}
+
+footer {background-color: black !important;}
+
+.destra {margin-block-start: 0px !important;
+    margin-block-end: 0px !important;
+    margin-inline-start: 5% !important;
+    margin-inline-end: 0px;}
+
+
+
+
+/*Attenta: Se il contenuto è inferiore alla larghezza massima, la max-width proprietà non ha effetto.*/

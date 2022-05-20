@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="it">
+	<head>
+		<meta charset="utf-g">
+ 		<meta name-"description" content="Entra e scopri gli artisti e le canzoni di ogni regione di Italia!"> <!-- da inserire max 100 caratteri -->
+ 		<meta name-"robots" content="index, follow">
+ 		<meta name="author" content="Micaela Sgambetterra e Arianna Vinci">
+ 		<meta HTTP-EQUIV="keywords" content="canzoni, canzoni tradizionali, canzoni italiane, artisti, cantanti, cantanti italiani, regioni, canzoni tipiche, musica italiana, tradizioni regionali">  <!-- da inserire, vedi https://www.html.it/articoli/come-scegliere-le-giuste-keyword/ -->
+		<link rel="icon" type="image/png" sizes="32x32" href="images/logotipo.png">  <!-- questa è l icona che compare nel tab -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <!--da qui-->
+ 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+ 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> <!--a qui, è il link bootstrap-->
+ 		<script src="https://kit.fontawesome.com/07cc4d2b01.js" crossorigin="anonymous"></script> <!--libreria per le icone-->
+ 		<link rel="preconnect" href="https://fonts.googleapis.com"> <!--da qui-->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet"> <!-- a qui, è il link font header-->
+		<title>TripMusic.it</title> <!--da cambiare in ogni pagina-->
+	</head>
+ 	<body> <!-- se inserisco qui "class="container-fluid" mi sballa tutto, quindi lo inserisco a main-->
+	 	<header>
+			<section id="backgroundnav">
+				<a href="index.html" title="torna alla homepage"><img id="immaginelogo" src="images/logosito.png" alt="logo del sito con banda musicale"/></a> 
+				<i id="homeicon" class="fa-solid fa-user"></i>
+				<i id="homeicon" class="fa-solid fa-magnifying-glass"></i>
+				<nav>
+					<ul id="meno">
+						<li class="navlista"> <a class="navlink" href="canzoni_tradizionali.html">CANZONI TRADIZIONALI</a></li>
+						<li id="navartisti" class="navlista"> <a class="navlink" href="artisti.html">ARTISTI</a></li>
+					</ul>
+				</nav>
+			</section>
+			<section id="testoheader" class="container-fluid" class="row morepaddinga"> 
+				<section class="col-sm-12 col-md-6">
+					<h1 id="payoff">Paese che vai, musica che trovi</h1>
+					<p id="baseline">Non puoi dire di conoscere veramente un posto, <br> finchè non avrai ascoltato la sua musica! <br> Una canzone non è soltanto una sequenza <br> di note musicali, ma il racconto di storie, <br> di emozioni e di cultura... <br> e tu sei qui per scoprirle tutte!</p>	
+				</section>	
+			</section>
+			<section id="frecciaheader">
+				<a href="#contenuti" class="ir">Scopri TripMusic</a>
+			</section>
+		</header>
+		<main id="contenuti" class="container-fluid"> 
+			<section id="pagina2" class="row morepadding">
+				<aside class="col-sm-2 col-md-2"> <!--da risolvere: per sm si crea un'altra fila-->
+					<img id="logotipo" class="col-sm-6 col-md-4" src="images/logotipo.png">
+				</aside>
+				<aside id="abstract" class="col-sm-10 col-md-6">
+					TripMusic.it è una raccolta di canzoni tradizionali e contemporanee. Il sito nasce con l’obiettivo di diffondere il panorama musicale di ogni regione del Paese, ideale per coloro che quando viaggiano non si accontentano di visitare semplicemente un luogo ma vogliono proprio immergersi in esso. Punto di forza di TripMusic è la possibilità di partecipare attivamente alle raccolte, condividendo con gli altri le canzoni e gli artisti che più amano.
+				</aside>
+				<aside class="col-sm-12 col-md-4" id="btn">
+					<a id="bottoneguida" class="btn btn-dark" href="guida_all_uso.html" role="button">GUIDA ALL'USO</a>
+					<button id="bottonericerca" type="button" class="btn btn-secondary" disabled>RICERCA AVANZATA</button>
+					<a id="bottonefaq"class="btn btn-dark" href="faq.html" role="button">DOMANDE FREQUENTI (F.A.Q.)</a>
+	 			</aside>
+			</section>		
+	 	</main>
+		<footer>
+	 		<section id="testofooter" class="row row-cols-sm-6 row-cols-md-3"/>
+	 			<section class="col-sm-6 col-md-3">
+	 				<p class="destra">
+	 					<a class="linkfooter" href="chisiamo.html">Chi siamo</a>
+	 				</p>
+	 			</section>
+	 			<section class="col-sm-6 col-md-3">
+	 				<p>
+	 					<a class="linkfooter" href="dicono_di_noi.html">Dicono di noi</a>
+	 				</p>
+	 			</section>
+	 			<section class="col-sm-6 col-md-3">
+	 				<p>Privacy Policy</a><p>
+	 			</section>
+	 			<section class="col-sm-6 col-md-3">
+	 				<p>
+	 					<a class="linkfooter" href="tds.html">Termini di servizio</a>
+					</p>
+	 			</section>
+	 		</section>
+	 		<section class="row row-cols-sm-6 row-cols-md-3"> <!-- visto che sono solo 3 le colonne andrebbe col-4 ma, per motivi di disegn, inseriamo col-4-->
+	 		<section class="col-sm-6 col-md-3"> 
+	 				<p class="destra" class="lesspadding">Trovaci su:</p>
+	 				<a class="destra" href="https://www.facebook.com/MusicTripit-111419734906421"><i id="iconesocial" class="fa-brands fa-facebook-square"></i></a>  <!--dovea essere class=iconesocial, ma dando una classe non mi ascoltava le istruzioni-->
+	 				<a class="destra" href="https://www.instagram.com/musictrip.it/"><i id="iconesocial" class="fa-brands fa-instagram-square"></i></a> 
+	 			</section>
+	 			<section class="col-sm-6 col-md-3"> 
+	 				<p class="lesspadding"> Condivi su:</p>
+	 				<div id="footericon" class="column"> <!-- visto su https://techblog.sdstudio.top/it/widget-semplici-icone-di-condivisione-social-per-weebly/--> <!-- da fare: inseire l'url corretto-->
+						<a href="https://www.facebook.com/sharer/sharer.php?u=www.TripMusic.it" id="iconesocial2" class="box">
+							<div class="fa fa-facebook"></div>
+						</a>
+						<a href="https://twitter.com/home?status=www.TripMusic.it" id="iconesocial2" class="box">
+							<div class="fa fa-twitter"></div>
+						</a>
+						<a href="https://plus.google.com/share?url=www.TripMusic.it" id="iconesocial2"class="box">
+							<div class="fa fa-google-plus"></div>
+						</a>
+					</div>
+	 			</section>
+	 			<section class="col-sm-6 col-md-3">
+	 				<h9>Contattaci:</h9>
+	 				<p>info@gmail.com</p>
+	 			</section>
+	 		</section>
+	 	</footer>
+	</body>
+</html>
+
+
+<!-- AGGIUNGER &nbsp per lasciare spazi tra parole -->

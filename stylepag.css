@@ -1,0 +1,118 @@
+
+html, body {
+	height: 17vh; /*mistero della fede:se tolgo questo non funziano i link*/
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+header {
+	text-align: left;
+	background-color: #e0da48;
+	background-size:cover;
+	height: 100%;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+	background-color: #e0da48 !important;
+	font-family: 'Josefin Sans', sans-serif !important;
+}
+
+#homeicon {
+	font-size: 1.5vw;
+	padding: 2px 3px;
+}
+
+nav ul { list-style-type: none;}
+
+nav ul li {
+	display: inline-block;
+	padding-top: 1em;
+	padding-bottom: 2% ; /*aggiusta in index*/
+	padding-left: 4.5em;
+	font-size: 1.3vw;
+} 	
+
+#navartisti {padding-right: 3em !important;}
+
+.navlink {
+	color: black;
+	text-decoration: none; 
+}
+
+.navlink:hover {
+ 	color: black;
+ 	text-decoration: underline;
+}
+
+#backgroundnav {
+	margin: 0px auto;
+	text-align: right !important;
+	background-color: rgb(255, 255, 255, 0.6); /*invece di usare comando opacity, ho usato Opacità con rgba così che l'op non fosse ereditata da elementi figli*/
+	height: 15vh;
+	width: 100%;
+	position: fixed;  /*grazie a fixed il nav segue lo scroll. Attenzione: è come se l'elemento ora uscisse dal flusso, quindi gli elementi non stanno più sotto*/
+}
+
+#immaginelogo { 
+	float: left;
+	max-width: 8% !important;
+	padding: 1%;
+}
+
+.breadcrumb {background-color: #e0da48 !important;
+}
+
+.breadcrumb-item {color: black !important;}
+
+.breadcrumb a {color: black;}
+
+
+
+
+<!doctype html>
+<html lang="it">
+	<head>
+		<meta charset="utf-g">
+ 		<meta name-"description" content="…"> <!-- da inserire max 100 caratteri -->
+ 		<meta name-"robots" content="index, follow">
+ 		<meta name="author" content="Micaela Sgambetterra e Arianna Vinci">
+ 		<meta HTTP-EQUIV="keywords" content="...">  <!-- da inserire, vedi https://www.html.it/articoli/come-scegliere-le-giuste-keyword/ -->
+		<link rel="icon" type="image/png" sizes="32x32" href="images/logotipo.png">  <!-- questa è l icona che compare nel tab -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <!--da qui-->
+ 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+ 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> <!--a qui, è il link bootstrap-->
+ 		<script src="https://kit.fontawesome.com/07cc4d2b01.js" crossorigin="anonymous"></script> <!--libreria per le icone-->
+ 		<link rel="preconnect" href="https://fonts.googleapis.com"> <!--da qui-->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet"> <!-- a qui, è il link font header-->
+		<title>TripMusic.it</title> <!--da cambiare in ogni pagina-->
+	</head>
+ 	<body> <!-- se inserisco qui "class="container-fluid" mi sballa tutto, quindi lo inserisco a main-->
+	 	<header>
+			<section id="backgroundnav">
+				<h1 id="logo"><a href="index.html" title="torna alla homepage"><img id="immaginelogo" src="images/logosito.png" alt="logo del sito con banda musicale"/></a></h1> 
+				<i id="homeicon" class="fa-solid fa-user"></i>
+				<i id="homeicon" class="fa-solid fa-magnifying-glass"></i>
+				<nav>
+					<ul>
+						<li class="navlista"> <a class="navlink" href="canzoni_tradizionali.html">CANZONI TRADIZIONALI</a></li>
+						<li id="navartisti" class="navlista"> <a class="navlink" href="artisti.html">ARTISTI</a></li>
+					</ul>
+				</nav>
+			</section>
+		</header>
+		<main id="contenuti" class="container-fluid"> 
+			<nav aria-label="breadcrumb">
+  				<ol class="breadcrumb">
+    				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    				<li class="breadcrumb-item active" aria-current="page"> Domande frequenti (F.A.Q.) </li>
+  				</ol>
+			</nav>
+		</main>
+		<footer></footer>
+	</body>
+</html>
