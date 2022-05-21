@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="it">
+	<head>
+		<meta charset="utf-g">
+ 		<meta name-"description" content="…"> <!-- da inserire max 100 caratteri -->
+ 		<meta name-"robots" content="index, follow">
+ 		<meta name="author" content="Micaela Sgambetterra e Arianna Vinci">
+ 		<meta HTTP-EQUIV="keywords" content="...">  <!-- da inserire, vedi https://www.html.it/articoli/come-scegliere-le-giuste-keyword/ -->
+		<link rel="icon" type="image/png" sizes="32x32" href="images/logotipo.png">  <!-- questa è l icona che compare nel tab -->
+		<link rel="stylesheet" type="text/css" href="css/style_canzoni.css">
+		<link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <!--da qui-->
+ 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+ 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> <!--a qui, è il link bootstrap-->
+ 		<script src="https://kit.fontawesome.com/07cc4d2b01.js" crossorigin="anonymous"></script> <!--libreria per le icone-->
+ 		<link rel="preconnect" href="https://fonts.googleapis.com"> <!--da qui-->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet"> <!-- a qui, è il link font header-->
+		<title>TripMusic.it-Piemonte</title> <!--da cambiare in ogni pagina-->
+	</head>
+ 	<body> <!-- se inserisco qui "class="container-fluid" mi sballa tutto, quindi lo inserisco a main-->
+	 	<header>
+			<section id="backgroundnav">
+				<h1 id="logo"><a href="index.html" title="torna alla homepage"><img id="immaginelogo" src="images/logosito.png" alt="logo del sito con banda musicale"/></a></h1> 
+				<i id="homeicon" class="fa-solid fa-user"></i>
+				<i id="homeicon" class="fa-solid fa-magnifying-glass"></i>
+				<nav>
+					<ul>
+						<li class="navlista"> <a class="navlink" href="canzoni_tradizionali.html">CANZONI TRADIZIONALI</a></li>
+						<li id="navartisti" class="navlista"> <a class="navlink" href="artisti.html">ARTISTI</a></li>
+					</ul>
+				</nav>
+			</section>
+		</header>
+		<main id="contenuti" class="container-fluid"> 
+			<nav aria-label="breadcrumb">
+  				<ol class="breadcrumb">
+    				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    				<li class="breadcrumb-item"><a href="canzoni_tradizionali.html">Canzoni tradizionali</a></li>
+    				<li class="breadcrumb-item active" aria-current="page"> Piemonte </li>
+  				</ol>
+			</nav>
+			<h1>PIEMONTE</h1>
+			<!--BOTTONE AGGIUNGI-->
+			<button id="aggiungi" type="button" class="btn btn-dark" data-toggle="modal" data-target="#Modal1">+ AGGIUNGI</button>
+			<div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="Modal1" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="ModalLabel">AGGIUNGI UN'ARTISTA</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">×</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form>
+          						<div class="mb-3">
+           							<label for="recipient-name" class="col-form-label">URL CANZONE:</label>
+            						<input type="text" class="form-control" id="recipient-name">
+         						 </div>
+         						 <div class="mb-3">
+            						<label for="message-text" class="col-form-label">NOME CANZONE</label>
+            						<textarea class="form-control" id="message-text"></textarea>
+          						</div>
+          						<div class="mb-3">
+            						<label for="message-text" class="col-form-label">ANNO DI USCITA</label>
+            						<textarea class="form-control" id="message-text"></textarea>
+          						</div>
+       						</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+							<button type="button" class="btn btn-warning">Invia</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--FINE BOTTONE AGGIUNGI-->
+			<div class="row row-cols-sm-6 row-cols-md-2 morepadding">
+  				<div class="col-sm-6 col-md-2">
+    				<div class="card">
+     					<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      					<div class="card-body">
+        					<a class="card-title" href="https://www.youtube.com/watch?v=HFqstkhwFho&ab_channel=IziVEVO">Chic - Izi</a>
+     				</div>
+   				</div>	
+  			</div> 
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+	      			<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+	      			<div class="card-body">
+	        			<a class="card-title" href="https://www.youtube.com/watch?v=OLjqe5OIx9w&ab_channel=ENSIOFFICIAL">Numero uno - Ensi</a>
+     				</div>
+    			</div> 
+  			</div> 
+ 			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=GWbb2-sypiI&ab_channel=WilliePeyoteVEVO">C'era Una Vodka - Willie Peyote</a>
+					</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=32g9St05CzQ&ab_channel=lucacarboniVEVO">Prima di partire - Giorgio Poi, Luca Carboni</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=464Rx1CJIJw&ab_channel=GigiD%27Agostino-Topic">The Riddle - Gigi D'agostino</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=zA52uNzx7Y4&ab_channel=malawolf85">Blue (Da Ba Dee) - Eiffel 65</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=tWSLXnJtRQk&ab_channel=SonoS0L0Canzonette">Milano e Vincenzo - Alberto Fortis</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=D9-QnEVcYR4&ab_channel=LAMUSICADITENCO">MI SONO INNAMORATO DI TE - LUIGI TENCO</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=8Zs7VWqNGHg&ab_channel=WarnerMusicItaly">Gloria - Umberto Tozzi</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=lqzRNvx4tjQ&ab_channel=buenasuerterecord">Guarda che luna - Fred Buscaglione</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=Z82IulrBRzA&ab_channel=SubsonicaVEVO">Tutti i miei sbagli - Subsonica</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=DoASbjgzQDI&ab_channel=BiancoVEVO">Fili d'erba - Bianco</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=02lYvkswsM4&ab_channel=EugenioInViaDiVEVO">Altrove - Eugenio in Via di Gioia</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=4R5mDpIgwUs&ab_channel=WarnerMusicItaly">Una volta ancora - Fred De Palma</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="ccol-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=NBd2_8KUImI&ab_channel=PatriziaPiazza">Canti piemontesi di osteria</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=xNas_lFvv-Y&list=RDQMg5zzgVqlNec&index=2&ab_channel=Amemanera">Fija  mia pijlo pa - Amemanera</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=pPF9eraGoaw&list=RDQMg5zzgVqlNec&index=3&ab_channel=Amemanera">Maria Gioana - Amemanera</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=whIiJU1Cht0&list=RDQMg5zzgVqlNec&index=8&ab_channel=Amemanera">O Maria Bela Maria - Amemanera</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=IGkHXdH7J5k&list=RDQMg5zzgVqlNec&index=12&ab_channel=FondazioneAndreaParodi">Sensa la lun-a - Amemanera</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="...">CANZONE</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="...">CANZONE</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="...">CANZONE</a>
+      				</div>
+    			</div>
+  			</div>
+		</div>
+		</main>
+		<footer></footer>
+	</body>
+

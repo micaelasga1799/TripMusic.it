@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="it">
+	<head>
+		<meta charset="utf-g">
+ 		<meta name-"description" content="…"> <!-- da inserire max 100 caratteri -->
+ 		<meta name-"robots" content="index, follow">
+ 		<meta name="author" content="Micaela Sgambetterra e Arianna Vinci">
+ 		<meta HTTP-EQUIV="keywords" content="...">  <!-- da inserire, vedi https://www.html.it/articoli/come-scegliere-le-giuste-keyword/ -->
+		<link rel="icon" type="image/png" sizes="32x32" href="images/logotipo.png">  <!-- questa è l icona che compare nel tab -->
+		<link rel="stylesheet" type="text/css" href="css/style_canzoni.css">
+		<link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <!--da qui-->
+ 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+ 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> <!--a qui, è il link bootstrap-->
+ 		<script src="https://kit.fontawesome.com/07cc4d2b01.js" crossorigin="anonymous"></script> <!--libreria per le icone-->
+ 		<link rel="preconnect" href="https://fonts.googleapis.com"> <!--da qui-->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet"> <!-- a qui, è il link font header-->
+		<title>TripMusic.it-Basilicata</title> <!--da cambiare in ogni pagina-->
+	</head>
+ 	<body> <!-- se inserisco qui "class="container-fluid" mi sballa tutto, quindi lo inserisco a main-->
+	 	<header>
+			<section id="backgroundnav">
+				<h1 id="logo"><a href="index.html" title="torna alla homepage"><img id="immaginelogo" src="images/logosito.png" alt="logo del sito con banda musicale"/></a></h1> 
+				<i id="homeicon" class="fa-solid fa-user"></i>
+				<i id="homeicon" class="fa-solid fa-magnifying-glass"></i>
+				<nav>
+					<ul>
+						<li class="navlista"> <a class="navlink" href="canzoni_tradizionali.html">CANZONI TRADIZIONALI</a></li>
+						<li id="navartisti" class="navlista"> <a class="navlink" href="artisti.html">ARTISTI</a></li>
+					</ul>
+				</nav>
+			</section>
+		</header>
+		<main id="contenuti" class="container-fluid"> 
+			<nav aria-label="breadcrumb">
+  				<ol class="breadcrumb">
+    				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    				<li class="breadcrumb-item"><a href="canzoni_tradizionali.html">Canzoni tradizionali</a></li>
+    				<li class="breadcrumb-item active" aria-current="page"> Basilicata </li>
+  				</ol>
+			</nav>
+			<h1>BASILICATA</h1>
+			<!--BOTTONE AGGIUNGI-->
+			<button id="aggiungi" type="button" class="btn btn-dark" data-toggle="modal" data-target="#Modal1">+ AGGIUNGI</button>
+			<div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="Modal1" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="ModalLabel">AGGIUNGI UN'ARTISTA</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">×</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form>
+          						<div class="mb-3">
+           							<label for="recipient-name" class="col-form-label">URL CANZONE:</label>
+            						<input type="text" class="form-control" id="recipient-name">
+         						 </div>
+         						 <div class="mb-3">
+            						<label for="message-text" class="col-form-label">NOME CANZONE</label>
+            						<textarea class="form-control" id="message-text"></textarea>
+          						</div>
+          						<div class="mb-3">
+            						<label for="message-text" class="col-form-label">ANNO DI USCITA</label>
+            						<textarea class="form-control" id="message-text"></textarea>
+          						</div>
+       						</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+							<button type="button" class="btn btn-warning">Invia</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--FINE BOTTONE AGGIUNGI-->
+			<div class="row row-cols-sm-6 row-cols-md-2 morepadding">
+  				<div class="col-sm-6 col-md-2">
+    				<div class="card">
+     					<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      					<div class="card-body">
+        					<a class="card-title" href="https://www.youtube.com/watch?v=K_1A9uNZQXk&ab_channel=FSKSATELLITE"> Ansia No - FSK</a>
+     				</div>
+   				</div>	
+  			</div> 
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+	      			<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+	      			<div class="card-body">
+	        			<a class="card-title" href="https://www.youtube.com/watch?v=zfJ1xI-8lhw&ab_channel=akiramelie">Basilicata on my mind - Rocco Papaleo</a>
+     				</div>
+    			</div> 
+  			</div> 
+ 			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=3kjypVSA9gA&ab_channel=Rossellicchia">E' l'amore che se ne va - Rocco Papaleo</a>
+					</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=BNPN2qH_yTE&ab_channel=Arisa">Potevi fare di più - Arisa</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=PWu71JMwGWE&ab_channel=WarnerMusicItaly">La notte - Arisa</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=iXbSEjn3aaE&ab_channel=GionnyScandalVEVO">Solo Te E Me - GionnyScandal</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=6hX-5NAp41I&ab_channel=WarnerMusicItaly">La rondine - Mango</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=Y-cVOswhJUU&ab_channel=WarnerMusicItaly">Amore per te - Mango</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=VElMz_y4Y9U&ab_channel=CNI-CompagniaNuoveIndye">Terra che trema - Tarantolati di Tricarico</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=lq7ks73yfBo&ab_channel=karnazzatosta">gatta mammona - tarantolati di tricarico</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=o6XQ9Q1LHuc&ab_channel=sirPage94">Tara'n Trance part II - Antonio Infantino</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=vVk3sgtuUl4&ab_channel=SPQRlabel">La Pietra Lunare . Il Mago Ubriaco - Hautville</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=O4tg4dEb_zo&ab_channel=FOLKMUSICWORLD">Lassa a Mammeta / Cum’ si fatta rossa</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=3TGSFGO99a8&ab_channel=NicolaManfredelli">Fiore di Lucania | Inno Ruralità Lucana</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="ccol-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=3xgTIS4GR7Q&ab_channel=lucanopovero">Canto popolare lucano 1977</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=ISNbHcdy6pI&ab_channel=MovieLightProductions">Siamo Lucani -
+                 Roberto Di Taranto / Federica Di Santis</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=FFshQ1J-910&ab_channel=PietroCirillo">Sangue Lucano - Pietro Cirillo</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=X1ydB0RE6mA&ab_channel=CNI-CompagniaNuoveIndye">Tarantato comm' a me' - Pietro Cirillo</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=bVsKVjUe0q4&ab_channel=IsaOfficial">Inno alla Basilicata - Isa</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="...">CANZONE</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="...">CANZONE</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="...">CANZONE</a>
+      				</div>
+    			</div>
+  			</div>
+		</div>
+		</main>
+		<footer></footer>
+	</body>
+

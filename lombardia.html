@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="it">
+	<head>
+		<meta charset="utf-g">
+ 		<meta name-"description" content="…"> <!-- da inserire max 100 caratteri -->
+ 		<meta name-"robots" content="index, follow">
+ 		<meta name="author" content="Micaela Sgambetterra e Arianna Vinci">
+ 		<meta HTTP-EQUIV="keywords" content="...">  <!-- da inserire, vedi https://www.html.it/articoli/come-scegliere-le-giuste-keyword/ -->
+		<link rel="icon" type="image/png" sizes="32x32" href="images/logotipo.png">  <!-- questa è l icona che compare nel tab -->
+		<link rel="stylesheet" type="text/css" href="css/style_canzoni.css">
+		<link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <!--da qui-->
+ 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+ 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> <!--a qui, è il link bootstrap-->
+ 		<script src="https://kit.fontawesome.com/07cc4d2b01.js" crossorigin="anonymous"></script> <!--libreria per le icone-->
+ 		<link rel="preconnect" href="https://fonts.googleapis.com"> <!--da qui-->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet"> <!-- a qui, è il link font header-->
+		<title>TripMusic.it-Lombardia</title> <!--da cambiare in ogni pagina-->
+	</head>
+ 	<body> <!-- se inserisco qui "class="container-fluid" mi sballa tutto, quindi lo inserisco a main-->
+	 	<header>
+			<section id="backgroundnav">
+				<h1 id="logo"><a href="index.html" title="torna alla homepage"><img id="immaginelogo" src="images/logosito.png" alt="logo del sito con banda musicale"/></a></h1> 
+				<i id="homeicon" class="fa-solid fa-user"></i>
+				<i id="homeicon" class="fa-solid fa-magnifying-glass"></i>
+				<nav>
+					<ul>
+						<li class="navlista"> <a class="navlink" href="canzoni_tradizionali.html">CANZONI TRADIZIONALI</a></li>
+						<li id="navartisti" class="navlista"> <a class="navlink" href="artisti.html">ARTISTI</a></li>
+					</ul>
+				</nav>
+			</section>
+		</header>
+		<main id="contenuti" class="container-fluid"> 
+			<nav aria-label="breadcrumb">
+  				<ol class="breadcrumb">
+    				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    				<li class="breadcrumb-item"><a href="canzoni_tradizionali.html">Canzoni tradizionali</a></li>
+    				<li class="breadcrumb-item active" aria-current="page"> Lombardia </li>
+  				</ol>
+			</nav>
+			<h1>LOMBARDIA</h1>
+			<!--BOTTONE AGGIUNGI-->
+			<button id="aggiungi" type="button" class="btn btn-dark" data-toggle="modal" data-target="#Modal1">+ AGGIUNGI</button>
+			<div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="Modal1" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="ModalLabel">AGGIUNGI UN'ARTISTA</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">×</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form>
+          						<div class="mb-3">
+           							<label for="recipient-name" class="col-form-label">URL CANZONE:</label>
+            						<input type="text" class="form-control" id="recipient-name">
+         						 </div>
+         						 <div class="mb-3">
+            						<label for="message-text" class="col-form-label">NOME CANZONE</label>
+            						<textarea class="form-control" id="message-text"></textarea>
+          						</div>
+          						<div class="mb-3">
+            						<label for="message-text" class="col-form-label">ANNO DI USCITA</label>
+            						<textarea class="form-control" id="message-text"></textarea>
+          						</div>
+       						</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+							<button type="button" class="btn btn-warning">Invia</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--FINE BOTTONE AGGIUNGI-->
+			<div class="row row-cols-sm-6 row-cols-md-2 morepadding">
+  				<div class="col-sm-6 col-md-2">
+    				<div class="card">
+     					<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      					<div class="card-body">
+        					<a class="card-title" href="https://www.youtube.com/watch?v=R_vhQyDkL1E&ab_channel=SferaEbbastaVEVO">Tik Tok RMX - Sfera Ebbasta</a>
+     				</div>
+   				</div>	
+  			</div> 
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+	      			<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+	      			<div class="card-body">
+	        			<a class="card-title" href="https://www.youtube.com/watch?v=PAwjmpxXEh4&ab_channel=AdrianoCelentanoOfficial"> Il ragazzo della Via Gluck - Adriano Celentano</a>
+     				</div>
+    			</div> 
+  			</div> 
+ 			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=MA_5P3u0apQ&ab_channel=MahmoodVEVO">Brividi - Mahmood, BLANCO</a>
+					</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=ThksCs3U9Hg&ab_channel=ITALIANSDO.ITBETTER">Se telefonando - MINA</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=G_zAenRvv78&ab_channel=gemellidiversiVEVO">Per farti sorridere - Gemelli Diversi</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=wnGkv2Inqf0&ab_channel=massimopericolo">7 Miliardi - Massimo Pericolo</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=lrRqQkn6kZI&ab_channel=WarnerMusicItaly">Hanno ucciso l'Uomo Ragno - Max Pezzali / 883</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=v5PZQUuNDWE&ab_channel=PinguiniTatticiNucleari">Bagatelle - Pinguini Tattici Nucleari</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=MJhkALvLs0s&ab_channel=ComaCoseVEVO">Fiamme negli occhi - Coma_Cose</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=s1xbQVNGSPQ&ab_channel=Ghali">Ninna Nanna - Ghali</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=YZMVk7BF_-w&ab_channel=SHIVA">Mon Fre - Shiva, Emis Killa</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=QHD5ScEAmFI&ab_channel=GuePequenoVEVO">Brivido - Guè Pequeno, Marracash</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=exXAyh-rGiw&ab_channel=JakeLaFuriaVEVO">El Party - Jake La Furia</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=iByfRLWYbfs&ab_channel=ClubDogoVEVO">Brucia Ancora - Club Dogo, J-Ax</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="ccol-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=rCdHk1eTe34&ab_channel=dargenVEVO">Dove Si Balla - Dargen D'Amico</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=V7WSrlSIF8k&ab_channel=articolo31VEVO">Domani Smetto - Articolo 31</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=vPClH-7ztMM&ab_channel=JAXVEVO">Piccoli per sempre - J-Ax</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=thiawcUa-Js&ab_channel=MacheteTv">King Supreme - Bassi Maestro, Machete</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=8_g7uatZIHQ&ab_channel=Maruego">CIOCCOLATA - Maruego, Caneda</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=AkyIpm6NzMw&ab_channel=mondomarcioVEVO">Dentro Alla Scatola - Mondo Marcio</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=XxCso8WgvGg&ab_channel=BiagioAntonacciVEVO">Non vivo più senza te - Biagio Antonacci</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=a0fkNdPiIL4&ab_channel=UltraMusic">Satisfaction - Benny Benassi</a>
+      				</div>
+    			</div>
+  			</div>
+        <div class="col-sm-6 col-md-2">
+          <div class="card">
+              <img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+              <div class="card-body">
+                <a class="card-title" href="https://www.youtube.com/watch?v=AFW81wHXcbE&ab_channel=ElioeleStorieTese">Mio Cuggino - Elio e le Storie Tese</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-2">
+          <div class="card">
+              <img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+              <div class="card-body">
+                <a class="card-title" href="https://www.youtube.com/watch?v=uu6vCPbEZdI&ab_channel=RkomiVEVO">NUOVO RANGE - Rkomi, Sfera Ebbasta</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-2">
+          <div class="card">
+              <img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+              <div class="card-body">
+                <a class="card-title" href="https://www.youtube.com/watch?v=zarm7sLSCCU&ab_channel=LazzaVEVO">Piove - Lazza, Sfera Ebbasta</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-2">
+          <div class="card">
+              <img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+              <div class="card-body">
+                <a class="card-title" href="https://www.youtube.com/watch?v=GOS7kF8UdOo&ab_channel=L%27Aura-Topic">Eclissi del cuore - L'Aura</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-2">
+          <div class="card">
+              <img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+              <div class="card-body">
+                <a class="card-title" href="https://www.youtube.com/watch?v=57re4w56G3o&ab_channel=MalikaAyaneVEVO">Adesso e qui - Malika Ayane</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-2">
+          <div class="card">
+              <img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+              <div class="card-body">
+                <a class="card-title" href="https://www.youtube.com/watch?v=EfIDJKX41kQ&ab_channel=twofingerzchannel">Hey Dj - TWO FINGERZ</a>
+              </div>
+          </div>
+        </div><div class="col-sm-6 col-md-2">
+          <div class="card">
+              <img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+              <div class="card-body">
+                <a class="card-title" href="...">CANZONE</a>
+              </div>
+          </div>
+        </div>
+
+		</div>
+		</main>
+		<footer></footer>
+	</body>
+
