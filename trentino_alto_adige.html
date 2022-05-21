@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="it">
+	<head>
+		<meta charset="utf-g">
+ 		<meta name-"description" content="…"> <!-- da inserire max 100 caratteri -->
+ 		<meta name-"robots" content="index, follow">
+ 		<meta name="author" content="Micaela Sgambetterra e Arianna Vinci">
+ 		<meta HTTP-EQUIV="keywords" content="...">  <!-- da inserire, vedi https://www.html.it/articoli/come-scegliere-le-giuste-keyword/ -->
+		<link rel="icon" type="image/png" sizes="32x32" href="images/logotipo.png">  <!-- questa è l icona che compare nel tab -->
+		<link rel="stylesheet" type="text/css" href="css/style_canzoni.css">
+		<link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <!--da qui-->
+ 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+ 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> <!--a qui, è il link bootstrap-->
+ 		<script src="https://kit.fontawesome.com/07cc4d2b01.js" crossorigin="anonymous"></script> <!--libreria per le icone-->
+ 		<link rel="preconnect" href="https://fonts.googleapis.com"> <!--da qui-->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet"> <!-- a qui, è il link font header-->
+		<title>TripMusic.it-Trentino Alto Adige</title> <!--da cambiare in ogni pagina-->
+	</head>
+ 	<body> <!-- se inserisco qui "class="container-fluid" mi sballa tutto, quindi lo inserisco a main-->
+	 	<header>
+			<section id="backgroundnav">
+				<h1 id="logo"><a href="index.html" title="torna alla homepage"><img id="immaginelogo" src="images/logosito.png" alt="logo del sito con banda musicale"/></a></h1> 
+				<i id="homeicon" class="fa-solid fa-user"></i>
+				<i id="homeicon" class="fa-solid fa-magnifying-glass"></i>
+				<nav>
+					<ul>
+						<li class="navlista"> <a class="navlink" href="canzoni_tradizionali.html">CANZONI TRADIZIONALI</a></li>
+						<li id="navartisti" class="navlista"> <a class="navlink" href="artisti.html">ARTISTI</a></li>
+					</ul>
+				</nav>
+			</section>
+		</header>
+		<main id="contenuti" class="container-fluid"> 
+			<nav aria-label="breadcrumb">
+  				<ol class="breadcrumb">
+    				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    				<li class="breadcrumb-item"><a href="canzoni_tradizionali.html">Canzoni tradizionali</a></li>
+    				<li class="breadcrumb-item active" aria-current="page"> Trentino Alto adige </li>
+  				</ol>
+			</nav>
+			<h1>TRENTINO ALTO ADIGE</h1>
+			<!--BOTTONE AGGIUNGI-->
+			<button id="aggiungi" type="button" class="btn btn-dark" data-toggle="modal" data-target="#Modal1">+ AGGIUNGI</button>
+			<div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="Modal1" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="ModalLabel">AGGIUNGI UN'ARTISTA</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">×</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form>
+          						<div class="mb-3">
+           							<label for="recipient-name" class="col-form-label">URL CANZONE:</label>
+            						<input type="text" class="form-control" id="recipient-name">
+         						 </div>
+         						 <div class="mb-3">
+            						<label for="message-text" class="col-form-label">NOME CANZONE</label>
+            						<textarea class="form-control" id="message-text"></textarea>
+          						</div>
+          						<div class="mb-3">
+            						<label for="message-text" class="col-form-label">ANNO DI USCITA</label>
+            						<textarea class="form-control" id="message-text"></textarea>
+          						</div>
+       						</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+							<button type="button" class="btn btn-warning">Invia</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--FINE BOTTONE AGGIUNGI-->
+			<div class="row row-cols-sm-6 row-cols-md-2 morepadding">
+  				<div class="col-sm-6 col-md-2">
+    				<div class="card">
+     					<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      					<div class="card-body">
+        					<a class="card-title" href="https://www.youtube.com/watch?v=cGlx2w2DCVM&ab_channel=WarnerMusicItaly">Il sole dentro - Anansi</a>
+     				</div>
+   				</div>	
+  			</div> 
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+	      			<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+	      			<div class="card-body">
+	        			<a class="card-title" href="https://www.youtube.com/watch?v=uhtKKq4iFpY&ab_channel=bastardsonsVEVO">L'Amor Carnale - The Bastard Sons Of Dioniso</a>
+     				</div>
+    			</div> 
+  			</div> 
+ 			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=jErA3NtKpTE&list=OLAK5uy_mSy8Te1w72xyPAJj8bJ4o2_p4YV8ec9gg&ab_channel=Brunorock-Topic">Con gli occhi negli occhi - Brunorock</a>
+					</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=l0ymLHL4vBU&ab_channel=SaifamMusic">Amazonas (the colors of love) - EVO - K</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=SYkUchwMid4&ab_channel=Graziano-Topic">Trapani, Marsala - Graziano</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=jKZ_t3oaI1U&ab_channel=Frei.Wild">Hab keine Angst - Frei.Wild</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=pXanYmon8RQ&ab_channel=Graveworm-Topic">Fear of dark - Graveworm</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=5Is3w65nH8s&ab_channel=GreenArrows-Topic">Defeat your land - Green Arrows</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=rP39CucYxMs&ab_channel=DanieleGroff%28Video%29">Sei un miracolo - Daniele Groff</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=PE1lzqJCeJ0&ab_channel=PhilOakeyVEVO">Together in Electric Dreams - Giorgio Moroder & Philip Oakey</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=0BnyH7tLu8k&ab_channel=musicatrentina">Musica Folk Trentina - I Beatrich</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=k-hH_7BH9Q0&ab_channel=Rsu-Topic">Fellatio meccanica - Rifiuti Solidi Urbani</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=e3rUMtfmq68&ab_channel=SkannersTV">Under the grieve - Skanners</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=TLOVBFpq5Hg&ab_channel=FOLKMUSICWORLD">Na volta gh’era - Musica dal Trentino</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="ccol-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=USIKOkI3yUo&ab_channel=glockenthurm1809">Vei en Trentino</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=iQgvdIZ73gA&ab_channel=Welschtirol88">Inno al Trentino</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="...">CANZONE</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="...">CANZONE</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="...">CANZONE</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="...">CANZONE</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="...">CANZONE</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="...">CANZONE</a>
+      				</div>
+    			</div>
+  			</div>
+		</div>
+		</main>
+		<footer></footer>
+	</body>
+

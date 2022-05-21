@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="it">
+	<head>
+		<meta charset="utf-g">
+ 		<meta name-"description" content="…"> <!-- da inserire max 100 caratteri -->
+ 		<meta name-"robots" content="index, follow">
+ 		<meta name="author" content="Micaela Sgambetterra e Arianna Vinci">
+ 		<meta HTTP-EQUIV="keywords" content="...">  <!-- da inserire, vedi https://www.html.it/articoli/come-scegliere-le-giuste-keyword/ -->
+		<link rel="icon" type="image/png" sizes="32x32" href="images/logotipo.png">  <!-- questa è l icona che compare nel tab -->
+		<link rel="stylesheet" type="text/css" href="css/style_canzoni.css">
+		<link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <!--da qui-->
+ 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+ 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> <!--a qui, è il link bootstrap-->
+ 		<script src="https://kit.fontawesome.com/07cc4d2b01.js" crossorigin="anonymous"></script> <!--libreria per le icone-->
+ 		<link rel="preconnect" href="https://fonts.googleapis.com"> <!--da qui-->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet"> <!-- a qui, è il link font header-->
+		<title>TripMusic.it-Valle D'Aosta</title> <!--da cambiare in ogni pagina-->
+	</head>
+ 	<body> <!-- se inserisco qui "class="container-fluid" mi sballa tutto, quindi lo inserisco a main-->
+	 	<header>
+			<section id="backgroundnav">
+				<h1 id="logo"><a href="index.html" title="torna alla homepage"><img id="immaginelogo" src="images/logosito.png" alt="logo del sito con banda musicale"/></a></h1> 
+				<i id="homeicon" class="fa-solid fa-user"></i>
+				<i id="homeicon" class="fa-solid fa-magnifying-glass"></i>
+				<nav>
+					<ul>
+						<li class="navlista"> <a class="navlink" href="canzoni_tradizionali.html">CANZONI TRADIZIONALI</a></li>
+						<li id="navartisti" class="navlista"> <a class="navlink" href="artisti.html">ARTISTI</a></li>
+					</ul>
+				</nav>
+			</section>
+		</header>
+		<main id="contenuti" class="container-fluid"> 
+			<nav aria-label="breadcrumb">
+  				<ol class="breadcrumb">
+    				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    				<li class="breadcrumb-item"><a href="canzoni_tradizionali.html">Valle d'Aosta</a></li>
+    				<li class="breadcrumb-item active" aria-current="page"> Lazio </li>
+  				</ol>
+			</nav>
+			<h1>VALLE D'AOSTA</h1>
+			<!--BOTTONE AGGIUNGI-->
+			<button id="aggiungi" type="button" class="btn btn-dark" data-toggle="modal" data-target="#Modal1">+ AGGIUNGI</button>
+			<div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="Modal1" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="ModalLabel">AGGIUNGI UN'ARTISTA</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">×</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form>
+          						<div class="mb-3">
+           							<label for="recipient-name" class="col-form-label">URL CANZONE:</label>
+            						<input type="text" class="form-control" id="recipient-name">
+         						 </div>
+         						 <div class="mb-3">
+            						<label for="message-text" class="col-form-label">NOME CANZONE</label>
+            						<textarea class="form-control" id="message-text"></textarea>
+          						</div>
+          						<div class="mb-3">
+            						<label for="message-text" class="col-form-label">ANNO DI USCITA</label>
+            						<textarea class="form-control" id="message-text"></textarea>
+          						</div>
+       						</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+							<button type="button" class="btn btn-warning">Invia</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--FINE BOTTONE AGGIUNGI-->
+			<div class="row row-cols-sm-6 row-cols-md-2 morepadding">
+  				<div class="col-sm-6 col-md-2">
+    				<div class="card">
+     					<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      					<div class="card-body">
+        					<a class="card-title" href="https://www.youtube.com/watch?v=4Vmd1W5ZJco&ab_channel=EmiRecordsItaly">CERCASI AAAMORE - DARI</a>
+     				</div>
+   				</div>	
+  			</div> 
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+	      			<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+	      			<div class="card-body">
+	        			<a class="card-title" href="https://www.youtube.com/watch?v=E_HhCxd5cEQ&ab_channel=GaetanoLoPresti">J'INVENTERAIS - MAGUI BETEMPS</a>
+     				</div>
+    			</div> 
+  			</div> 
+ 			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=-Fw1myCycfw&ab_channel=spavaldo1">TI HO VISTA IN PIAZZA - FRONTIERA</a>
+					</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=fUe6-TwwSO8&ab_channel=MusicSolutionsAgency">GHOSTS OF UNCONSCIOUSNESS - ILLOGICIST</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=VWNsDvcfpwI&ab_channel=TosoMalemodo">QUESTI ANNI - KINA</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=3QlNHc82ON4&ab_channel=losbastardos">IL BRANCO - LOSBASTARDOS</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=lQCfni6iUjU&ab_channel=LOrageVEVO">I PIEDI PIÙ BELLI DEL MONDO - L' ORAGE</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=H8PNcG8vPCQ&list=OLAK5uy_lhjZwjVMrXhOWYZK5NblPQdl2oHXmXb48&index=2">DON GIOVANNI, K. 527: OVERTURE - BRUNO PRATICÒ</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=OsRZRXUlRzs&ab_channel=TeleSaint-VincentconStefanoCapano">CANTO POPOLARE VALDOSTANO - CAPANO STEFANO</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=FByTp-juNM0&ab_channel=FulvioCreux">INNO DELLA VALLE D'AOSTA (MONTAGNES VALDOTAINES)</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=N6ARTBw90Gg&ab_channel=studiotv54">LE NOSTRE VALLI "VALDOSTANA"</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=EOWeFuptYfY&ab_channel=CinziaTarditi">VAL D'AOSTA PRIMO AMORE - ORCHESTRA "ACQUAMARINA"</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=ejINNpUfxT4&ab_channel=fabriziocarletto">POESIA - CIANSUNIER</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=u_As1NOsKM4&ab_channel=Ciansunier-Topic">VECCHIA BALERA - CIANSUNIER</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="ccol-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="https://www.youtube.com/watch?v=3iKB7uEXsXE&ab_channel=Ciansunier-Topic">MONTAGNES D'ITALIE - CIANSUNIER</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="...">CANZONE</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="...">CANZONE</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="...">CANZONE</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="...">CANZONE</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="...">CANZONE</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="...">CANZONE</a>
+      				</div>
+    			</div>
+  			</div>
+  			<div class="col-sm-6 col-md-2">
+    			<div class="card">
+      				<img src="images/vinile.jpg" class="card-img-top" alt="vinile">
+      				<div class="card-body">
+        				<a class="card-title" href="...">CANZONE</a>
+      				</div>
+    			</div>
+  			</div>
+		</div>
+		</main>
+		<footer></footer>
+	</body>
+
