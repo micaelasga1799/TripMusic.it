@@ -261,14 +261,14 @@ nav ul li {
 	margin-bottom: 2%;
 }
 #btn {padding-bottom: 1%;}
-} 	
+ 	
 .destra {margin-inline-start: 0px !important;}
 #iconesocial {
 	padding-left: 2vw;
 	color: white;*/
 	 /*perchè width mi controlla la distanza tra icone, invece che la grandezza?*/
-
-
+}
+}
  
 
 /*Attenta: Se il contenuto è inferiore alla larghezza massima, la max-width proprietà non ha effetto.*/
